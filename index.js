@@ -1,9 +1,10 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 
-const Engineer = require("./lib/Engineer");
-const Intern = require("./lib/Intern");
-const Manager = require("./lib/Manager");
+const Employee = require('./lib/employee')
+const Engineer = require("./lib/engineer");
+const Intern = require("./lib/intern");
+const Manager = require("./lib/manager");
 
 
 const managerPrompt = [{
@@ -38,7 +39,7 @@ const teamMemberRolePick = {
 	name: 'teamMemberRole',
 };
 
-const engineerPrompt = {
+const engineerPrompt = [{
     type: 'input',
     message: "What is the Engineer's name?",
     name: 'engineerName',
@@ -49,9 +50,10 @@ const engineerPrompt = {
     name: "email",
 }, 
 {
-    type: ''
-
-}
-
+    type: "input",
+    message: "Enter the employee ID for the engineer",
+    name: "id"
+},
+]
 
 
