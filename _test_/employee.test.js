@@ -12,12 +12,12 @@ describe ("Employee Information", () => {
     });
     it("sets an employee's ID", () => {
         const idValue = 32;
-        const e = new Employee("Safi", idValue);
+        const e = new Employee("Bob", idValue);
         expect(e.id).toBe(idValue);
     });
     it("Sets email address", () => {
         const emailValue = "random@gmail.com";
-        const e = new Employee("Safi", 32, emailValue);
+        const e = new Employee("Bob", 32, emailValue);
         expect(e.email).toBe(emailValue);
     });
 });
@@ -33,7 +33,7 @@ describe('getName', () => {
 describe("getId", () => {
     it("get id via function", () => {
         const idValue = 32;
-        const e = new Employee("Safi", idValue);
+        const e = new Employee("Bob", idValue);
         expect(e.getId()).toBe(idValue);
     });
 });
@@ -41,7 +41,7 @@ describe("getId", () => {
 describe("getEmail", () => {
     it("get email via function", () => {
         const emailValue = "random@gmail.com";
-        const e = new Employee("Safi", 32, emailValue);
+        const e = new Employee("Bob", 32, emailValue);
         expect(e.getEmail()).toBe(emailValue);
     });
 });
@@ -49,7 +49,7 @@ describe("getEmail", () => {
 describe("getRole", () => {
     it("get team role via function", () => {
         const role= "Employee";
-        const e = new Employee("Safi", 32, "random@gmail.com");
+        const e = new Employee("Bob", 32, "random@gmail.com");
         expect(e.getRole()).toBe(role);
     });
 });
