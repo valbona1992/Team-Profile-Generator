@@ -48,9 +48,8 @@
   
   
   ## Usage
-  ```
   Use the command line to navigate to the root of the application and run `node app.js`.  Follow prompts to add team members to your roster. 
-  ```  
+ 
 
   ## Tech
   - NPM (dependencies: jest, fs, inquirer)
