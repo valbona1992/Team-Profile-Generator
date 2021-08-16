@@ -27,13 +27,16 @@
   
   ## Demo Video 
 
-  🎥 The full video file showing functionality of the application can be found here: [link](https://drive.google.com/file/d/1lyQ0vlO9kzeGwtsFqQqWngqlJp-mvKJt/view) <br/>
+  🎥 The full video file showing functionality of the application can be found here: [link](https://drive.google.com/file/d/1paBfaafed2WMutkMsu3ejHpYv2GvrW79/view?usp=sharing) <br/>
 
- ![Screen Recording](images/goodreadme.gif)
+ ![Screen Recording](img/previewrecording.gif)
   
   ## Screenshots
-  <img src="images/Screenshot1.png" alt="screenshot" /> <br/> <br/>
-  <img src="images/Screenshot2.png" alt="screenshot" />
+
+  This is an example of the inquirer prompt. 
+  <img src="img/inquirerprompt.png" alt="screenshot" /> <br/> <br/>
+  This is an example of the HTML that is generated after the user prompts.
+  <img src="img/generatedHTML.png" alt="screenshot" />
   
   ## Installation
   
@@ -72,7 +75,7 @@
   ```
   and run `npm run test` from the command line.
 
-  <img src="images/Screenshot2.png" alt="screenshot" />
+  <img src="img/npmtest.png" alt="screenshot" />
 
   
   ## Questions

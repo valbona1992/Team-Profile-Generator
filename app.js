@@ -189,25 +189,25 @@ function createEmployee(employees) {
             <p class="card-text fst-italic"> ${element.getRole()} </p>
             </div>
             <ul class="list-group list-group-flush bg-light m-3 ">
-            <li class="list-group-item"> Email: <a href="mailto:${element.getEmail()}" class="card-link"> ${element.getEmail()}</a></li>
-            <li class="list-group-item"> ID: ${element.getId()} </li>
+            <li class="list-group-item bg-light"> Email: <a href="mailto:${element.getEmail()}" class="card-link"> ${element.getEmail()}</a></li>
+            <li class="list-group-item bg-light"> ID: ${element.getId()} </li>
         `
         switch (element.getRole()) {
             case 'Manager':
                 htmlCards += `
-                <li class="list-group-item"> Office Number: ${element.getOfficeNumber()}  </li>
+                <li class="list-group-item bg-light"> Office Number: ${element.getOfficeNumber()}  </li>
                 `
                 break;
         
             case 'Engineer':
                 htmlCards += `
-                <li class="list-group-item"> GitHub: <a href="https://github.com/${element.getGithub()}" target="_blank"> ${element.getGithub()} </a> </li>
+                <li class="list-group-item bg-light"> GitHub: <a href="https://github.com/${element.getGithub()}" target="_blank"> ${element.getGithub()} </a> </li>
                 `
                 break;
 
             case 'Intern':
                 htmlCards += `
-                <li class="list-group-item"> School: ${element.getSchool()} </li>
+                <li class="list-group-item bg-light"> School: ${element.getSchool()} </li>
                 `
                 break;
         }
@@ -233,14 +233,14 @@ function generateHTML(employees){
     </head>
     <body>
         <header>
-        <nav class="navbar navbar-dark bg-danger bg-gradient ">
+        <nav class="navbar navbar-dark bg-primary">
             <div class="container-fluid justify-content-center">
-            <span class="navbar-text mb-0 h1 ">Team Profiles</span>
+            <span class="m-4  h1 ">Team Profiles</span>
             </div>
         </nav>
         </header>
 
-        <div class="container mt-4 d-flex flex-row flex-wrap justify-content-center"> 
+        <div class="container mt-4 d-flex flex-row flex-wrap justify-content-center text-center"> 
         ${createEmployee(employees)}
         </div>
 
